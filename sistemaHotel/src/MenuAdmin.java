@@ -11,7 +11,7 @@ public class MenuAdmin extends MenuConfigs {
     public void exibir() {
         boolean executando = true;
 
-        System.out.println(ciano + "Olá " + usuario + "! Seja bem-vindo(a) ao nosso painel de Administrador. 😎" + reset);
+        System.out.println(ciano + "Olá! Seja bem-vindo(a) ao nosso painel de Administrador. 😎" + reset);
         System.out.println(div);
         while (executando) {
             System.out.println(vermelho + "\n◆" + reset + "  Menu de Admin  " + vermelho + "◆");

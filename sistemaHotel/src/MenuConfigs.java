@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public abstract class MenuConfigs {
@@ -7,7 +6,6 @@ public abstract class MenuConfigs {
     protected String usuario;
     protected String reset = "\u001B[0m";
     protected String vermelho = "\u001B[31m";
-    protected String verde = "\u001B[32m";
     protected String ciano = "\u001B[36m";
     protected String roxo = "\u001B[35m";
     protected String div = "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";

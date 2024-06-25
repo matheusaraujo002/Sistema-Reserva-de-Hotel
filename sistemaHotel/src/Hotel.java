@@ -7,7 +7,6 @@ public class Hotel {
     String reset = "\u001B[0m";
     String verde = "\u001B[32m";
     String vermelho = "\u001B[31m";
-    String div = "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";
 
     public Hotel() {
         quartos = new ArrayList<>();
@@ -60,6 +59,19 @@ public class Hotel {
         }
     }
 
+    //Admin
+
+    public void adicionarQuarto(Quarto quarto) {
+        for (Quarto q : quartos) {
+            if (q.getNumero() == quarto.getNumero()) {
+                System.out.println(vermelho+ "⚠ Já existe um quarto com o número " + quarto.getNumero() + "." +reset);
+                return;
+            }
+        }
+        quartos.add(quarto);
+        System.out.println(verde+ "✅ Quarto adicionado com sucesso." +reset);
+    }
+
     public void liberarQuarto(int numero) {
         boolean quartoEncontrado = false;
 
@@ -98,16 +110,5 @@ public class Hotel {
         } else {
             System.out.println(vermelho + "⚠ O quarto inserido não existe." + reset);
         }
-    }
-
-    public void adicionarQuarto(Quarto quarto) {
-        for (Quarto q : quartos) {
-            if (q.getNumero() == quarto.getNumero()) {
-                System.out.println(vermelho+ "⚠ Já existe um quarto com o número " + quarto.getNumero() + "." +reset);
-                return;
-            }
-        }
-        quartos.add(quarto);
-        System.out.println(verde+ "✅ Quarto adicionado com sucesso." +reset);
     }
 }

@@ -12,6 +12,8 @@ public class Main {
         String terminal = ciano + "❯❯❯" + reset;
 
         // Armazenando alguns quartos ao hotel
+        System.out.println(div);
+        System.out.println("🖊 Adicionando quartos pré-definidos:\n");
         hotel.adicionarQuarto(new Quarto(101, "Simples"));
         hotel.adicionarQuarto(new Quarto(102, "Simples"));
         hotel.adicionarQuarto(new Quarto(201, "Duplo"));
